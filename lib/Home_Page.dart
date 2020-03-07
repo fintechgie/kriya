@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 
 import 'package:kriya_india/Bottom_navbar/Home_File.dart';
 import 'package:kriya_india/Bottom_navbar/Yoga_File.dart';
+import 'package:kriya_india/Nav_Bar.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -32,8 +33,11 @@ class _MyHomePageState extends State<MyHomePage> {
       key: _scaffoldKey,
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(Icons.menu, color: Colors.black), // set your color here
-            onPressed: () => _scaffoldKey.currentState.openDrawer()
+          icon: new Image.asset("assets/images/Kriya_India.png"), // set your color here
+            onPressed: () {
+              Navigator.push(context,
+                      new MaterialPageRoute(builder: (context) => new Nav_Bar()));
+            }
         ),
         title: Text(widget.title,textAlign: TextAlign.right,style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
           fontSize: 30,
@@ -72,17 +76,25 @@ class AppDrawer extends StatefulWidget {
 class _AppDrawerState extends State<AppDrawer> {
   @override
   Widget build(BuildContext context) {
-    return new Drawer(
-      child: new ListView(
-        children: <Widget>[
-          new DrawerHeader(
-            child: new Text("Header"),
-          ),
-          new ListTile(
-            title: new Text("Item 1"),
-          ),
-        ],
-      ),
+    return new SizedBox(
+      width: MediaQuery.of(context).size.width * 1,
+      child: Drawer(
+          child: new ListView(
+            children: <Widget>[
+              new DrawerHeader(
+                child: new Text("DRAWER HEADER.."),
+                decoration: new BoxDecoration(color: Colors.orange),
+              ),
+              new ListTile(
+                title: new Text("Item => 1"),
+                onTap: () {
+//                  Navigator.pop(context);
+//                  Navigator.push(context,
+//                      new MaterialPageRoute(builder: (context) => new HomePage()));
+                },
+              ),
+            ],
+          )),
     );
   }
 }
