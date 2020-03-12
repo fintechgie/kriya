@@ -110,6 +110,59 @@ class _Home extends State<Home> {
                       itemBuilder: (context, index) {
                         return Container(
                           width: MediaQuery.of(context).size.width * 0.7,
+                          child:Padding(
+                            padding: EdgeInsets.only(right: 10),
+                            child: Card(
+                              child: Container(
+                                child: Column(
+                                  children: <Widget>[
+                                    Expanded(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.only(
+                                            topLeft: Radius.circular(20.0),
+                                            topRight: Radius.circular(20.0),
+                                          ),
+                                          color: Color(0xffe5e6ea),
+                                        ),
+                                        child: Image.asset('assets/images/Chakra.png'),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(9.0),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: <Widget>[
+                                          Text(
+                                            "Wome Sofa",
+                                            style: Theme.of(context).textTheme.title,
+                                          ),
+                                          Text(
+                                            index.toString(),
+                                            style: Theme.of(context).textTheme.subhead.apply(color: Colors.grey[500]),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+
+                          )
+
+                        );
+                  }),
+                ),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
+                  height: MediaQuery.of(context).size.height * 0.55,
+                  child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount:12,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: MediaQuery.of(context).size.width * 0.7,
                           child: Card(
                             child: Container(
                               child: Column(
@@ -123,7 +176,7 @@ class _Home extends State<Home> {
                                         ),
                                         color: Color(0xffe5e6ea),
                                       ),
-                                      child: Image.asset(""),
+                                      child: Image.asset('assets/images/Chakra.png'),
                                     ),
                                   ),
                                   Padding(
@@ -147,7 +200,7 @@ class _Home extends State<Home> {
                             ),
                           ),
                         );
-                  }),
+                      }),
                 )
                ],
             ),

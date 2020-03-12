@@ -18,8 +18,8 @@ class _Nav_Bar extends State<Nav_Bar> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 16),
-          child: Column(
+           padding: EdgeInsets.symmetric(horizontal: 16),
+            child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               ListTile(
@@ -116,7 +116,7 @@ class _Nav_Bar extends State<Nav_Bar> {
                     radius: 30,
                     child: ClipOval(
                       child: Image.network(
-                        'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTm3EH3H80b_LL5QnTLjSfxZru5AgrG9OZI08HoLumlXzVYWDPj',
+                        '',
                       ),
                     ),
                   ),
@@ -124,7 +124,7 @@ class _Nav_Bar extends State<Nav_Bar> {
                     radius: 30,
                     child: ClipOval(
                       child: Image.network(
-                        'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTm3EH3H80b_LL5QnTLjSfxZru5AgrG9OZI08HoLumlXzVYWDPj',
+                        '',
                       ),
                     ),
                   ),
@@ -132,7 +132,7 @@ class _Nav_Bar extends State<Nav_Bar> {
                     radius: 30,
                     child: ClipOval(
                       child: Image.network(
-                        'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTm3EH3H80b_LL5QnTLjSfxZru5AgrG9OZI08HoLumlXzVYWDPj',
+                        '',
                       ),
                     ),
                   ),
@@ -140,7 +140,7 @@ class _Nav_Bar extends State<Nav_Bar> {
                     radius: 30,
                     child: ClipOval(
                       child: Image.network(
-                        'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTm3EH3H80b_LL5QnTLjSfxZru5AgrG9OZI08HoLumlXzVYWDPj',
+                        '',
                       ),
                     ),
                   ),

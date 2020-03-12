@@ -17,7 +17,7 @@ class _Yoga extends State<Yoga> {
             Expanded(
               child: GridView.builder(
                 padding: EdgeInsets.symmetric(horizontal: 15.0),
-                itemCount: 8,
+                itemCount: 1,
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     crossAxisSpacing: 15.0,
