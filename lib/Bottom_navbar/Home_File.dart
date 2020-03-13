@@ -94,13 +94,14 @@ class _Home extends State<Home> {
                       padding: EdgeInsets.all(20),
                       child: Row(
                         children: <Widget>[
-                          Text("Featured Programs",style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
+                          Text("Featured programs",style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
                             fontSize: 20,
                             fontStyle: FontStyle.normal,),)
                         ],
                       ),
                     )
                 ),
+
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
                   height: MediaQuery.of(context).size.height * 0.55,
@@ -155,57 +156,181 @@ class _Home extends State<Home> {
                   }),
                 ),
                 Container(
+                    child:Padding(
+                      padding: EdgeInsets.all(20),
+                      child: Row(
+                        children: <Widget>[
+                          Text("Our Plans",style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
+                            fontSize: 20,
+                            fontStyle: FontStyle.normal,),)
+                        ],
+                      ),
+                    )
+                ),
+
+                Container(
                   padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
-                  height: MediaQuery.of(context).size.height * 0.55,
+                  height: MediaQuery.of(context).size.height * 0.30,
                   child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount:12,
                       itemBuilder: (context, index) {
                         return Container(
-                          width: MediaQuery.of(context).size.width * 0.7,
-                          child: Card(
-                            child: Container(
-                              child: Column(
-                                children: <Widget>[
-                                  Expanded(
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(20.0),
-                                          topRight: Radius.circular(20.0),
+                            width: MediaQuery.of(context).size.width * 0.5,
+                            child:Padding(
+                              padding: EdgeInsets.only(right: 10),
+                              child: Card(
+                                child: Container(
+                                  child: Column(
+                                    children: <Widget>[
+                                      Expanded(
+                                        child: Container(
+                                          child: Image.asset('assets/images/Chakra.png',fit:BoxFit.cover ,),
                                         ),
-                                        color: Color(0xffe5e6ea),
                                       ),
-                                      child: Image.asset('assets/images/Chakra.png'),
-                                    ),
+
+                                    ],
                                   ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(9.0),
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: <Widget>[
-                                        Text(
-                                          "Wome Sofa",
-                                          style: Theme.of(context).textTheme.title,
-                                        ),
-                                        Text(
-                                          index.toString(),
-                                          style: Theme.of(context).textTheme.subhead.apply(color: Colors.grey[500]),
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                ],
+                                ),
                               ),
-                            ),
-                          ),
+
+                            )
+
                         );
                       }),
-                )
+                ),
+                Container(
+                    child:Padding(
+                      padding: EdgeInsets.all(20),
+                      child: Row(
+                        children: <Widget>[
+                          Text("Daily Routine",style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
+                            fontSize: 20,
+                            fontStyle: FontStyle.normal,),)
+                        ],
+                      ),
+                    )
+                ),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
+                  height: MediaQuery.of(context).size.height * 0.30,
+                  child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount:12,
+                      itemBuilder: (context, index) {
+                        return Container(
+                            width: MediaQuery.of(context).size.width * 0.5,
+                            child:Padding(
+                              padding: EdgeInsets.only(right: 10),
+                              child: Card(
+                                child: Container(
+                                  child: Column(
+                                    children: <Widget>[
+                                      Expanded(
+                                        child: Container(
+                                          child: Image.asset('assets/images/Mudra.png',fit:BoxFit.cover ,),
+                                        ),
+                                      ),
+
+                                    ],
+                                  ),
+                                ),
+                              ),
+
+                            )
+
+                        );
+                      }),
+                ),
+                Container(
+                    child:Padding(
+                      padding: EdgeInsets.all(20),
+                      child: Row(
+                        children: <Widget>[
+                          Text("Keep Calm Your Day",style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
+                            fontSize: 20,
+                            fontStyle: FontStyle.normal,),)
+                        ],
+                      ),
+                    )
+                ),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
+                  height: MediaQuery.of(context).size.height * 0.30,
+                  child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount:12,
+                      itemBuilder: (context, index) {
+                        return Container(
+                            width: MediaQuery.of(context).size.width * 0.5,
+                            child:Padding(
+                              padding: EdgeInsets.only(right: 10),
+                              child: Card(
+                                child: Container(
+                                  child: Column(
+                                    children: <Widget>[
+                                      Expanded(
+                                        child: Container(
+                                          child: Image.asset('assets/images/Yoga.png',fit:BoxFit.cover ,),
+                                        ),
+                                      ),
+
+                                    ],
+                                  ),
+                                ),
+                              ),
+
+                            )
+
+                        );
+                      }),
+                ),
+                Container(
+                    child:Padding(
+                      padding: EdgeInsets.all(20),
+                      child: Row(
+                        children: <Widget>[
+                          Text("Mudra's",style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
+                            fontSize: 20,
+                            fontStyle: FontStyle.normal,),)
+                        ],
+                      ),
+                    )
+                ),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
+                  height: MediaQuery.of(context).size.height * 0.30,
+                  child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount:12,
+                      itemBuilder: (context, index) {
+                        return Container(
+                            width: MediaQuery.of(context).size.width * 0.5,
+                            child:Padding(
+                              padding: EdgeInsets.only(right: 10),
+                              child: Card(
+                                child: Container(
+                                  child: Column(
+                                    children: <Widget>[
+                                      Expanded(
+                                        child: Container(
+                                          child: Image.asset('assets/images/Mudra.png',fit:BoxFit.cover ,),
+                                        ),
+                                      ),
+
+                                    ],
+                                  ),
+                                ),
+                              ),
+
+                            )
+                        );
+                      }),
+                ),
                ],
             ),
           ),
-        )
-    );
+          ),
+        );
   }
 }

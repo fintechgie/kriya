@@ -68,7 +68,7 @@ class _MyHomePage extends State<MyHomePage> {
             },
           ),
         ],
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.white,
       ),
 
       body: currentTab[provider.currentIndex],
@@ -79,27 +79,27 @@ class _MyHomePage extends State<MyHomePage> {
         },
         items: [
           BottomNavigationBarItem(
-              icon: new Image.asset("assets/images/Chakra.png",width: 30,),
+              icon: new Image.asset("assets/images/features.png",width: 30,),
               title: new Text('Features'),
               backgroundColor: Colors.grey
           ),
           BottomNavigationBarItem(
-              icon: new Icon(Icons.person),
+              icon:new Image.asset("assets/images/yoga_ico.png",width: 30,),
               title: new Text('Yoga'),
               backgroundColor: Colors.grey
           ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.settings),
+              icon: new Image.asset("assets/images/medibenifits.png",width: 30,),
               title: Text('Medibenifits'),
               backgroundColor: Colors.grey
           ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.search),
+              icon: new Image.asset("assets/images/food.png",width: 30,),
               title: Text('Food'),
               backgroundColor: Colors.grey
           ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.edit),
+              icon: new Image.asset("assets/images/history.png",width: 30,),
               title: Text('History'),
               backgroundColor: Colors.grey
           )
