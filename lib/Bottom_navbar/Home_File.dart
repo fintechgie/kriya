@@ -13,11 +13,11 @@ class _Home extends State<Home> {
   CarouselSlider carouselSlider;
   int _current = 0;
   List imgList = [
-    'https://images.unsplash.com/photo-1502117859338-fd9daa518a9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-    'https://images.unsplash.com/photo-1554321586-92083ba0a115?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-    'https://images.unsplash.com/photo-1536679545597-c2e5e1946495?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-    'https://images.unsplash.com/photo-1543922596-b3bbaba80649?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-    'https://images.unsplash.com/photo-1502943693086-33b5b1cfdf2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80'
+    'assets/images/Asanas/1.png',
+    'assets/images/Asanas/2.png',
+    'assets/images/Asanas/3.png',
+    'assets/images/Asanas/4.png',
+    'assets/images/Asanas/5.png'
   ];
 
   List<T> map<T>(List list, Function handler) {
@@ -27,8 +27,6 @@ class _Home extends State<Home> {
     }
     return result;
   }
-  final List<String> entries = <String>['A', 'B', 'C'];
-  final List<int> colorCodes = <int>[600, 500, 100];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,6 +38,10 @@ class _Home extends State<Home> {
                   child:Padding(
                     padding: EdgeInsets.all(16.0),
                     child: Card(
+                      elevation: 2.0,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20.0),
+                      ),
                       child: carouselSlider = CarouselSlider(
                         height: 280.0,
                         initialPage: 0,
@@ -63,10 +65,7 @@ class _Home extends State<Home> {
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                 ),
-                                child: Image.network(
-                                  imgUrl,
-                                  fit: BoxFit.cover,
-                                ),
+                                child: Image.asset('assets/images/Asanas/1.png',fit: BoxFit.fill,),
                               );
                             },
                           );
@@ -122,7 +121,7 @@ class _Home extends State<Home> {
                                   children: <Widget>[
                                     Expanded(
                                       child: Container(
-                                        child: Image.asset('assets/images/Chakra.png'),
+                                        child: Image.asset('assets/images/Asanas/2.png'),
                                       ),
                                     ),
                                     Padding(
@@ -131,7 +130,7 @@ class _Home extends State<Home> {
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: <Widget>[
                                           Text(
-                                            "Wome Sofa",
+                                            "Corporate Mind",
                                             style: Theme.of(context).textTheme.title,
                                           ),
                                           Text(
@@ -165,7 +164,7 @@ class _Home extends State<Home> {
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
-                  height: MediaQuery.of(context).size.height * 0.28,
+                  height: MediaQuery.of(context).size.height * 0.55,
                   child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount:12,
@@ -184,7 +183,7 @@ class _Home extends State<Home> {
                                     children: <Widget>[
                                       Expanded(
                                         child: Container(
-                                          child: Image.asset('assets/images/Chakra.png',fit:BoxFit.cover ,),
+                                          child: Image.asset('assets/images/Food/1.png',fit:BoxFit.cover ,),
                                         ),
                                       ),
 

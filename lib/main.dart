@@ -48,6 +48,7 @@ class _MyHomePage extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     var provider = Provider.of<BottomNavigationBarProvider>(context);
+    String title="Kriya India";
 
     return Scaffold(
       key: _scaffoldKey,
@@ -59,10 +60,10 @@ class _MyHomePage extends State<MyHomePage> {
                   new MaterialPageRoute(builder: (context) => new Nav_Bar()));
             }
         ),
-        title: Text('Kriya India',textAlign: TextAlign.right,style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
-          fontSize: 30,
+        title:Center( child:Text(title.toUpperCase(),style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .1),
+          fontSize: 25,
           fontStyle: FontStyle.normal,),
-        ),
+        ),),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.search,color: Colors.black),
