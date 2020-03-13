@@ -98,56 +98,14 @@ class _Nav_Bar extends State<Nav_Bar> {
                 children: <Widget>[
                   Padding(
                     padding: EdgeInsets.all(25),
-                    child: Text("Team of Kriya",style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
+                    child: Text("Kriya India",style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
           fontSize: 20,
           fontStyle: FontStyle.normal,),),
                   ),
 
                 ],
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  CircleAvatar(
-                    backgroundImage: AssetImage('assets/images/Chakra.png'),
-                    radius: 30,
-                  ),
-                  CircleAvatar(
-                    radius: 30,
-                    child: ClipOval(
-                      child: Image.network(
-                        '',
-                      ),
-                    ),
-                  ),
-                  CircleAvatar(
-                    radius: 30,
-                    child: ClipOval(
-                      child: Image.network(
-                        '',
-                      ),
-                    ),
-                  ),
-                  CircleAvatar(
-                    radius: 30,
-                    child: ClipOval(
-                      child: Image.network(
-                        '',
-                      ),
-                    ),
-                  ),
-                  CircleAvatar(
-                    radius: 30,
-                    child: ClipOval(
-                      child: Image.network(
-                        '',
-                      ),
-                    ),
-                  ),
 
-
-                ],
-              ),
               SizedBox(height: 30,)
 
             ],
@@ -157,7 +115,6 @@ class _Nav_Bar extends State<Nav_Bar> {
     );
   }
 }
-final String url = "http://chuteirafc.cartacapital.com.br/wp-content/uploads/2018/12/15347041965884.jpg";
 
 class CustomAppBar extends StatelessWidget
     with PreferredSizeWidget{
@@ -181,17 +138,25 @@ class CustomAppBar extends StatelessWidget
               )
             ]
         ),
-        child: Column(
+        child:Stack(
           children: <Widget>[
-            SizedBox(height: 30,),
-
+            SizedBox(height: 100,),
+            Positioned(
+                top: 40,
+                left: 10,
+                child: IconButton(
+                    icon: new Icon(Icons.arrow_back),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    }
+                ),
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
-//                Icon(Icons.arrow_back),
-
                 Column(
                   children: <Widget>[
+                    SizedBox(height: 20,),
                     Container(
                       width: 100,
                       height: 100,
@@ -199,27 +164,20 @@ class CustomAppBar extends StatelessWidget
                           shape: BoxShape.circle,
                           image: DecorationImage(
                               fit: BoxFit.cover,
-                              image: NetworkImage(url)
+                              image:  AssetImage('assets/images/Kriya_India.png')
                           )
                       ),
                     ),
-                    SizedBox(height: 16,),
-                    Text("Kriya India", style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
-                      fontSize: 30,
+                    SizedBox(height: 20,),
+                    Text("Enlightment of Existance", style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
+                      fontSize: 20,
                       fontStyle: FontStyle.normal,),)
                   ],
                 ),
-
-
-              ],
-            ),
-
-            SizedBox(height: 8,),
-
-
           ],
-        ),
-      ),
+        ) ,
+        ]
+      ),)
     );
   }
 }

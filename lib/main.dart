@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:kriya_india/Bottom_navbar/Food_File.dart';
 import 'package:kriya_india/Bottom_navbar/Home_File.dart';
+import 'package:kriya_india/Bottom_navbar/Medifits_File.dart';
 import 'package:kriya_india/Bottom_navbar/Yoga_File.dart';
 import 'package:kriya_india/Nav_Bar.dart';
 import 'package:provider/provider.dart';
@@ -38,9 +40,9 @@ class _MyHomePage extends State<MyHomePage> {
   var currentTab = [
     Home(),
     Yoga(),
-    Setting(),
-    Search(),
-    Edit(),
+    Medifits(),
+    Food(),
+    Food(),
   ];
 
   @override
@@ -80,105 +82,26 @@ class _MyHomePage extends State<MyHomePage> {
         items: [
           BottomNavigationBarItem(
               icon: new Image.asset("assets/images/features.png",width: 30,),
-              title: new Text('Features'),
-              backgroundColor: Colors.grey
+              title: new Text('Features',style: TextStyle(color: Colors.black),),
           ),
           BottomNavigationBarItem(
               icon:new Image.asset("assets/images/yoga_ico.png",width: 30,),
-              title: new Text('Yoga'),
-              backgroundColor: Colors.grey
+              title: new Text('Yoga',style: TextStyle(color: Colors.black),),
           ),
           BottomNavigationBarItem(
               icon: new Image.asset("assets/images/medibenifits.png",width: 30,),
-              title: Text('Medibenifits'),
-              backgroundColor: Colors.grey
+              title: Text('Medibenifits',style: TextStyle(color: Colors.black),),
           ),
           BottomNavigationBarItem(
               icon: new Image.asset("assets/images/food.png",width: 30,),
-              title: Text('Food'),
-              backgroundColor: Colors.grey
+              title: Text('Food',style: TextStyle(color: Colors.black),),
           ),
           BottomNavigationBarItem(
               icon: new Image.asset("assets/images/history.png",width: 30,),
-              title: Text('History'),
-              backgroundColor: Colors.grey
+              title: Text('History',style: TextStyle(color: Colors.black),),
           )
         ],
       ),
-    );
-  }
-}
-class Profile extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Container(
-          alignment: Alignment.center,
-          height: 300,
-          width: 300,
-          child: Text(
-            "Yoga",
-            style: TextStyle(color: Colors.white, fontSize: 30),
-          ),
-          color: Colors.blue,
-        ),
-      ),
-    );
-  }
-}
-
-class Setting extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-          child: Container(
-            alignment: Alignment.center,
-            height: 300,
-            width: 300,
-            child: Text(
-              "Run",
-              style: TextStyle(color: Colors.white, fontSize: 30),
-            ),
-            color: Colors.cyan,
-          )),
-    );
-  }
-}
-class Search extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-          child: Container(
-            alignment: Alignment.center,
-            height: 300,
-            width: 300,
-            child: Text(
-              "Run",
-              style: TextStyle(color: Colors.white, fontSize: 30),
-            ),
-            color: Colors.cyan,
-          )),
-    );
-  }
-}
-class Edit extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-          child: Container(
-            alignment: Alignment.center,
-            height: 300,
-            width: 300,
-            child: Text(
-              "dbsh",
-              style: TextStyle(color: Colors.white, fontSize: 30),
-            ),
-            color: Colors.yellow,
-          )),
     );
   }
 }

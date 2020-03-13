@@ -101,10 +101,9 @@ class _Home extends State<Home> {
                       ),
                     )
                 ),
-
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
-                  height: MediaQuery.of(context).size.height * 0.55,
+                  height: MediaQuery.of(context).size.height * 0.45,
                   child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount:12,
@@ -112,20 +111,17 @@ class _Home extends State<Home> {
                         return Container(
                           width: MediaQuery.of(context).size.width * 0.7,
                           child:Padding(
-                            padding: EdgeInsets.only(right: 10),
+                            padding: EdgeInsets.only(right: 15),
                             child: Card(
+                              elevation: 2.0,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(20.0),
+                              ),
                               child: Container(
                                 child: Column(
                                   children: <Widget>[
                                     Expanded(
                                       child: Container(
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.only(
-                                            topLeft: Radius.circular(20.0),
-                                            topRight: Radius.circular(20.0),
-                                          ),
-                                          color: Color(0xffe5e6ea),
-                                        ),
                                         child: Image.asset('assets/images/Chakra.png'),
                                       ),
                                     ),
@@ -160,26 +156,29 @@ class _Home extends State<Home> {
                       padding: EdgeInsets.all(20),
                       child: Row(
                         children: <Widget>[
-                          Text("Our Plans",style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
+                          Text("Nutrition Plans",style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
                             fontSize: 20,
                             fontStyle: FontStyle.normal,),)
                         ],
                       ),
                     )
                 ),
-
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
-                  height: MediaQuery.of(context).size.height * 0.30,
+                  height: MediaQuery.of(context).size.height * 0.28,
                   child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount:12,
                       itemBuilder: (context, index) {
                         return Container(
-                            width: MediaQuery.of(context).size.width * 0.5,
+                            width: MediaQuery.of(context).size.width * 0.8,
                             child:Padding(
                               padding: EdgeInsets.only(right: 10),
                               child: Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                ),
+                                elevation: 2.0,
                                 child: Container(
                                   child: Column(
                                     children: <Widget>[
@@ -213,7 +212,7 @@ class _Home extends State<Home> {
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
-                  height: MediaQuery.of(context).size.height * 0.30,
+                  height: MediaQuery.of(context).size.height * 0.28,
                   child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount:12,
@@ -223,6 +222,10 @@ class _Home extends State<Home> {
                             child:Padding(
                               padding: EdgeInsets.only(right: 10),
                               child: Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                ),
+                                elevation: 2.0,
                                 child: Container(
                                   child: Column(
                                     children: <Widget>[
@@ -256,7 +259,7 @@ class _Home extends State<Home> {
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
-                  height: MediaQuery.of(context).size.height * 0.30,
+                  height: MediaQuery.of(context).size.height * 0.28,
                   child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount:12,
@@ -266,6 +269,10 @@ class _Home extends State<Home> {
                             child:Padding(
                               padding: EdgeInsets.only(right: 10),
                               child: Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                ),
+                                elevation: 2.0,
                                 child: Container(
                                   child: Column(
                                     children: <Widget>[
@@ -299,7 +306,7 @@ class _Home extends State<Home> {
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
-                  height: MediaQuery.of(context).size.height * 0.30,
+                  height: MediaQuery.of(context).size.height * 0.28,
                   child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount:12,
@@ -309,6 +316,10 @@ class _Home extends State<Home> {
                             child:Padding(
                               padding: EdgeInsets.only(right: 10),
                               child: Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                ),
+                                elevation: 2.0,
                                 child: Container(
                                   child: Column(
                                     children: <Widget>[
