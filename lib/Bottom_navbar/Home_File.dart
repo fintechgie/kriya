@@ -125,7 +125,7 @@ class _Home extends State<Home> {
                                   children: <Widget>[
                                     Expanded(
                                       child: Container(
-                                        child: Image.asset('assets/images/Asanas/2.png'),
+                                        child: Image.asset('assets/images/2.png'),
                                       ),
                                     ),
                                     Padding(
@@ -187,7 +187,7 @@ class _Home extends State<Home> {
                                     children: <Widget>[
                                       Expanded(
                                         child: Container(
-                                          child: Image.asset('assets/images/Food/1.png',),
+                                          child: Image.asset('assets/images/1.png',),
                                         ),
                                       ),
 
