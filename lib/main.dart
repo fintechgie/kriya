@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        scaffoldBackgroundColor:Colors.grey[200],
         primarySwatch: Colors.blue,
       ),
       home: ChangeNotifierProvider<BottomNavigationBarProvider>(
