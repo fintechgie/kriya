@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:kriya_india/Nav_Bar.dart';
 
 class Yoga extends StatefulWidget {
   @override
@@ -67,6 +68,8 @@ class _Yoga extends State<Yoga> {
                       ),
                       onTap:(){
                         debugPrint("${i}");
+                        Navigator.push(context,
+                            new MaterialPageRoute(builder: (context) => new Nav_Bar()));
                       }
                   );
 
