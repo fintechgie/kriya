@@ -63,6 +63,8 @@ flutter:
   assets:
     - assets/images/
     - assets/images/Asanas/
+    - assets/images/Food/
+
 
   #  - images/a_dot_ham.jpeg
 

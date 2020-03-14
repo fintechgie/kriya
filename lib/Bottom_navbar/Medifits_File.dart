@@ -41,31 +41,26 @@ class _Medifits extends State<Medifits> {
                             children: <Widget>[
                               Expanded(
                                 child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(9.0),
-                                      topRight: Radius.circular(9.0),
-                                    ),
-                                    color: Color(0xffe5e6ea),
-                                  ),
-                                  child: Image.asset(""),
+                                    child:Center(
+                                      child: Image.asset('assets/images/Asanas/6.png'),
+                                    )
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.all(9.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Text(
-                                      "Medifits",
-                                      style: Theme.of(context).textTheme.title,
+                                  padding: const EdgeInsets.all(5.0),
+                                  child:Center(
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: <Widget>[
+                                        Text(
+                                          "Medifits",
+                                        ),
+
+                                      ],
                                     ),
-                                    Text(
-                                      i.toString(),
-                                      style: Theme.of(context).textTheme.subhead.apply(color: Colors.grey[500]),
-                                    )
-                                  ],
-                                ),
+
+                                  )
+
                               ),
                             ],
                           ),

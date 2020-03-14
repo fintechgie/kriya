@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:kriya_india/Bottom_navbar/Food_File.dart';
+import 'package:kriya_india/Bottom_navbar/History_File.dart';
 import 'package:kriya_india/Bottom_navbar/Home_File.dart';
 import 'package:kriya_india/Bottom_navbar/Medifits_File.dart';
 import 'package:kriya_india/Bottom_navbar/Yoga_File.dart';
@@ -42,7 +43,7 @@ class _MyHomePage extends State<MyHomePage> {
     Yoga(),
     Medifits(),
     Food(),
-    Food(),
+    History(),
   ];
 
   @override

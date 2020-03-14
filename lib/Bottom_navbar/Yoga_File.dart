@@ -41,31 +41,26 @@ class _Yoga extends State<Yoga> {
                           children: <Widget>[
                             Expanded(
                               child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.only(
-                                    topLeft: Radius.circular(9.0),
-                                    topRight: Radius.circular(9.0),
-                                  ),
-                                  color: Color(0xffe5e6ea),
-                                ),
-                                child: Image.asset(""),
+                                child:Center(
+                                  child: Image.asset('assets/images/Asanas/3.png'),
+                                )
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.all(9.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: <Widget>[
-                                  Text(
-                                    "Yoga",
-                                    style: Theme.of(context).textTheme.title,
-                                  ),
-                                  Text(
-                                    i.toString(),
-                                    style: Theme.of(context).textTheme.subhead.apply(color: Colors.grey[500]),
-                                  )
-                                ],
-                              ),
+                              padding: const EdgeInsets.all(5.0),
+                              child:Center(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      "Yoga",
+                                    ),
+
+                                  ],
+                                ),
+
+                              )
+
                             ),
                           ],
                         ),

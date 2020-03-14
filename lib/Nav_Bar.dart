@@ -158,12 +158,12 @@ class CustomAppBar extends StatelessWidget
                   children: <Widget>[
                     SizedBox(height: 20,),
                     Container(
-                      width: 100,
-                      height: 100,
+                      width: 110,
+                      height: 110,
                       decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           image: DecorationImage(
-                              fit: BoxFit.cover,
+                              fit: BoxFit.fill,
                               image:  AssetImage('assets/images/Kriya_India.png')
                           )
                       ),

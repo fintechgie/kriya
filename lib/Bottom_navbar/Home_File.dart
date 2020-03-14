@@ -34,44 +34,48 @@ class _Home extends State<Home> {
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                Container(
-                  child:Padding(
-                    padding: EdgeInsets.all(16.0),
-                    child: Card(
+                Padding(
+                  padding:EdgeInsets.all(16) ,
+                  child:Card(
                       elevation: 2.0,
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20.0),
+                        borderRadius: BorderRadius.circular(18.0),
                       ),
-                      child: carouselSlider = CarouselSlider(
-                        height: 280.0,
-                        initialPage: 0,
-                        autoPlay: true,
-                        reverse: false,
-                        enableInfiniteScroll: true,
-                        autoPlayInterval: Duration(seconds: 2),
-                        autoPlayAnimationDuration: Duration(milliseconds: 2000),
-                        pauseAutoPlayOnTouch: Duration(seconds: 10),
-                        scrollDirection: Axis.horizontal,
-                        onPageChanged: (index) {
-                          setState(() {
-                            _current = index;
-                          });
-                        },
-                        items: imgList.map((imgUrl) {
-                          return Builder(
-                            builder: (BuildContext context) {
-                              return Container(
-                                width: MediaQuery.of(context).size.width,
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                ),
-                                child: Image.asset('assets/images/Asanas/1.png',fit: BoxFit.fill,),
-                              );
-                            },
-                          );
-                        }).toList(),
-                      ),
-                    ),
+                      child:Padding(
+                        padding:EdgeInsets.all(5) ,
+                        child: carouselSlider = CarouselSlider(
+                          height: 300.0,
+                          initialPage: 0,
+                          autoPlay: true,
+                          reverse: false,
+                          enableInfiniteScroll: true,
+                          autoPlayInterval: Duration(seconds: 2),
+                          autoPlayAnimationDuration: Duration(milliseconds: 3000),
+                          pauseAutoPlayOnTouch: Duration(seconds: 10),
+                          scrollDirection: Axis.horizontal,
+                          onPageChanged: (index) {
+                            setState(() {
+                              _current = index;
+                            });
+                          },
+                          items: imgList.map((imgUrl) {
+                            return Builder(
+                              builder: (BuildContext context) {
+                                return Container(
+                                  width: MediaQuery.of(context).size.width,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                  ),
+                                  child: Image.asset(imgUrl,fit: BoxFit.fill,),
+                                );
+                              },
+                            );
+                          }).toList(),
+                        ),
+
+                      )
+
+
                   ),
                 ),
                 Row(
@@ -90,7 +94,7 @@ class _Home extends State<Home> {
                 ),
                 Container(
                     child:Padding(
-                      padding: EdgeInsets.all(20),
+                      padding: EdgeInsets.all(10),
                       child: Row(
                         children: <Widget>[
                           Text("Featured programs",style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
@@ -152,7 +156,7 @@ class _Home extends State<Home> {
                 ),
                 Container(
                     child:Padding(
-                      padding: EdgeInsets.all(20),
+                      padding: EdgeInsets.all(10),
                       child: Row(
                         children: <Widget>[
                           Text("Nutrition Plans",style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
@@ -164,7 +168,7 @@ class _Home extends State<Home> {
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
-                  height: MediaQuery.of(context).size.height * 0.55,
+                  height: MediaQuery.of(context).size.height * 0.28,
                   child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount:12,
@@ -183,7 +187,7 @@ class _Home extends State<Home> {
                                     children: <Widget>[
                                       Expanded(
                                         child: Container(
-                                          child: Image.asset('assets/images/Food/1.png',fit:BoxFit.cover ,),
+                                          child: Image.asset('assets/images/Food/1.png',),
                                         ),
                                       ),
 
@@ -199,7 +203,7 @@ class _Home extends State<Home> {
                 ),
                 Container(
                     child:Padding(
-                      padding: EdgeInsets.all(20),
+                      padding: EdgeInsets.all(10),
                       child: Row(
                         children: <Widget>[
                           Text("Daily Routine",style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
@@ -230,7 +234,7 @@ class _Home extends State<Home> {
                                     children: <Widget>[
                                       Expanded(
                                         child: Container(
-                                          child: Image.asset('assets/images/Mudra.png',fit:BoxFit.cover ,),
+                                          child: Image.asset('assets/images/Asanas/4.png',fit:BoxFit.cover ,),
                                         ),
                                       ),
 
@@ -246,7 +250,7 @@ class _Home extends State<Home> {
                 ),
                 Container(
                     child:Padding(
-                      padding: EdgeInsets.all(20),
+                      padding: EdgeInsets.all(10),
                       child: Row(
                         children: <Widget>[
                           Text("Keep Calm Your Day",style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
@@ -277,7 +281,7 @@ class _Home extends State<Home> {
                                     children: <Widget>[
                                       Expanded(
                                         child: Container(
-                                          child: Image.asset('assets/images/Yoga.png',fit:BoxFit.cover ,),
+                                          child: Image.asset('assets/images/Asanas/6.png',fit:BoxFit.cover ,),
                                         ),
                                       ),
 
@@ -293,7 +297,7 @@ class _Home extends State<Home> {
                 ),
                 Container(
                     child:Padding(
-                      padding: EdgeInsets.all(20),
+                      padding: EdgeInsets.all(10),
                       child: Row(
                         children: <Widget>[
                           Text("Mudra's",style:GoogleFonts.playfairDisplay( textStyle: TextStyle(color:Colors.brown[800], letterSpacing: .5),
@@ -324,7 +328,7 @@ class _Home extends State<Home> {
                                     children: <Widget>[
                                       Expanded(
                                         child: Container(
-                                          child: Image.asset('assets/images/Mudra.png',fit:BoxFit.cover ,),
+                                          child: Image.asset('assets/images/Asanas/17.png',fit:BoxFit.fill ,),
                                         ),
                                       ),
 
