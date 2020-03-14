@@ -43,7 +43,7 @@ class _Yoga extends State<Yoga> {
                             Expanded(
                               child: Container(
                                 child:Center(
-                                  child: Image.asset('assets/images/Asanas/3.png'),
+                                  child: Image.asset('assets/images/3.png'),
                                 )
                               ),
                             ),
