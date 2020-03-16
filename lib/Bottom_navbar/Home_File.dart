@@ -200,8 +200,7 @@ class _Home extends State<Home> {
 
                         );
                       }),
-                ),
-                Container(
+                ), Container(
                     child:Padding(
                       padding: EdgeInsets.all(10),
                       child: Row(
@@ -213,6 +212,7 @@ class _Home extends State<Home> {
                       ),
                     )
                 ),
+
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
                   height: MediaQuery.of(context).size.height * 0.28,
