@@ -68,6 +68,11 @@ class _MyHomePage extends State<MyHomePage> {
         ),),
         actions: <Widget>[
           IconButton(
+            icon: Icon(Icons.notifications,color: Colors.black),
+            onPressed: () {
+            },
+          ),
+          IconButton(
             icon: Icon(Icons.search,color: Colors.black),
             onPressed: () {
             },

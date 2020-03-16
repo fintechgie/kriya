@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
-
+import 'package:matrix_gesture_detector/matrix_gesture_detector.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Home extends StatefulWidget {
@@ -336,7 +336,6 @@ class _Home extends State<Home> {
                                   ),
                                 ),
                               ),
-
                             )
                         );
                       }),
@@ -346,5 +345,34 @@ class _Home extends State<Home> {
           ),
           ),
         );
+  }
+}
+
+
+
+class ZoomableWidget extends StatefulWidget {
+  final Widget child;
+
+  const ZoomableWidget({Key key, this.child}) : super(key: key);
+  @override
+  _ZoomableWidgetState createState() => _ZoomableWidgetState();
+}
+
+class _ZoomableWidgetState extends State<ZoomableWidget> {
+  Matrix4 matrix = Matrix4.identity();
+
+  @override
+  Widget build(BuildContext context) {
+    return MatrixGestureDetector(
+      onMatrixUpdate: (Matrix4 m, Matrix4 tm, Matrix4 sm, Matrix4 rm) {
+        setState(() {
+          matrix = m;
+        });
+      },
+      child: Transform(
+        transform: matrix,
+        child: widget.child,
+      ),
+    );
   }
 }
