@@ -340,6 +340,7 @@ class _Home extends State<Home> {
                         );
                       }),
                 ),
+
                ],
             ),
           ),
@@ -347,8 +348,6 @@ class _Home extends State<Home> {
         );
   }
 }
-
-
 
 class ZoomableWidget extends StatefulWidget {
   final Widget child;
